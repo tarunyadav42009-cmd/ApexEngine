@@ -5,7 +5,8 @@
 void PriceBucket::append(Order* order) {
     if (!head) {
         head = tail = order;
-    } else {
+    } 
+    else {
         tail->next = order;
         order->prev = tail;
         tail = order;
