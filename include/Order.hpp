@@ -7,7 +7,7 @@ struct alignas(64) Order {
     Quantity quantity;
     Side side;
 
-    // Pointers for an intrusive, zero-allocation doubly-linked list
+    // Pointers for an intrusive, zero-allocation doubly-linked list!
     Order* next{nullptr};
     Order* prev{nullptr};
 };
